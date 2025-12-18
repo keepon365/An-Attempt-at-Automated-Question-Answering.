@@ -1,0 +1,9 @@
+{
+    "ai_api_key":
+    "ai_api_url":
+    "browser_type":
+    "wisdom_tree_username":
+    "wisdom_tree_password":
+    "target_proficiency": 80,
+    "max_retries": 3
+}

@@ -1,0 +1,676 @@
+2025-12-18 14:47:35 - INFO - === 智慧树全自动答题助手启动 ===
+2025-12-18 14:47:35 - ERROR - 不支持的浏览器类型：edge
+2025-12-18 14:47:35 - ERROR - 浏览器初始化失败：不支持的浏览器类型：edge（仅支持chrome/firefox）
+2025-12-18 14:47:35 - ERROR - 程序运行出错：不支持的浏览器类型：edge（仅支持chrome/firefox）
+Traceback (most recent call last):
+  File "C:\Users\zwm\Desktop\auto_course\main.py", line 29, in main
+    main_logic = MainLogic(config)
+  File "C:\Users\zwm\Desktop\auto_course\main_logic.py", line 11, in __init__
+    self.browser = BrowserController(config)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\zwm\Desktop\auto_course\browser_controller.py", line 13, in __init__
+    self.driver = self._init_browser()
+                  ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\zwm\Desktop\auto_course\browser_controller.py", line 28, in _init_browser
+    raise ValueError(f"不支持的浏览器类型：{browser_type}（仅支持chrome/firefox）")
+ValueError: 不支持的浏览器类型：edge（仅支持chrome/firefox）
+2025-12-18 14:49:59 - INFO - === 智慧树全自动答题助手启动 ===
+2025-12-18 14:50:00 - INFO - 成功初始化edge浏览器
+2025-12-18 14:50:21 - ERROR - 登录超时，可能是用户名密码错误或网络问题
+2025-12-18 14:50:23 - INFO - 浏览器已关闭
+2025-12-18 14:50:23 - ERROR - 程序运行出错：Message: 
+Traceback (most recent call last):
+  File "C:\Users\zwm\Desktop\auto_course\main.py", line 30, in main
+    main_logic.run()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\zwm\Desktop\auto_course\main_logic.py", line 91, in run
+    self.browser.login()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\zwm\Desktop\auto_course\browser_controller.py", line 72, in login
+    self.wait.until(
+    ~~~~~~~~~~~~~~~^
+        EC.title_contains("智慧树网")
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\zwm\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 122, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2025-12-18 14:51:24 - INFO - === 智慧树全自动答题助手启动 ===
+2025-12-18 14:51:26 - INFO - 成功初始化edge浏览器
+2025-12-18 14:51:50 - INFO - 登录成功
+2025-12-18 14:52:07 - ERROR - 导航到课程失败：Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff77edc87c5
+	0x7ff77ed38e34
+	0x7ff77f123222
+	0x7ff77eb92d9e
+	0x7ff77eb92ffb
+	0x7ff77ebce917
+	0x7ff77eb8a2e5
+	0x7ff77ebcc8de
+	0x7ff77eb8982a
+	0x7ff77eb88b33
+	0x7ff77eb89653
+	0x7ff77ec722e4
+	0x7ff77ec8109c
+	0x7ff77ec7ac7f
+	0x7ff77ee59b27
+	0x7ff77ed44696
+	0x7ff77ed3eaa4
+	0x7ff77ed3ebe9
+	0x7ff77ed32cad
+	0x7ffe8132e8d7
+	0x7ffe82c6c53c
+
+2025-12-18 14:52:09 - INFO - 浏览器已关闭
+2025-12-18 14:52:09 - ERROR - 程序运行出错：Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff77edc87c5
+	0x7ff77ed38e34
+	0x7ff77f123222
+	0x7ff77eb92d9e
+	0x7ff77eb92ffb
+	0x7ff77ebce917
+	0x7ff77eb8a2e5
+	0x7ff77ebcc8de
+	0x7ff77eb8982a
+	0x7ff77eb88b33
+	0x7ff77eb89653
+	0x7ff77ec722e4
+	0x7ff77ec8109c
+	0x7ff77ec7ac7f
+	0x7ff77ee59b27
+	0x7ff77ed44696
+	0x7ff77ed3eaa4
+	0x7ff77ed3ebe9
+	0x7ff77ed32cad
+	0x7ffe8132e8d7
+	0x7ffe82c6c53c
+Traceback (most recent call last):
+  File "C:\Users\zwm\Desktop\auto_course\main.py", line 30, in main
+    main_logic.run()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\zwm\Desktop\auto_course\main_logic.py", line 93, in run
+    self.browser.navigate_to_course()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\zwm\Desktop\auto_course\browser_controller.py", line 88, in navigate_to_course
+    my_course_btn = self.wait.until(
+        EC.element_to_be_clickable((By.XPATH, "//a[contains(text(), '我的课程')]"))
+    )
+  File "C:\Users\zwm\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 122, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff77edc87c5
+	0x7ff77ed38e34
+	0x7ff77f123222
+	0x7ff77eb92d9e
+	0x7ff77eb92ffb
+	0x7ff77ebce917
+	0x7ff77eb8a2e5
+	0x7ff77ebcc8de
+	0x7ff77eb8982a
+	0x7ff77eb88b33
+	0x7ff77eb89653
+	0x7ff77ec722e4
+	0x7ff77ec8109c
+	0x7ff77ec7ac7f
+	0x7ff77ee59b27
+	0x7ff77ed44696
+	0x7ff77ed3eaa4
+	0x7ff77ed3ebe9
+	0x7ff77ed32cad
+	0x7ffe8132e8d7
+	0x7ffe82c6c53c
+
+2025-12-18 14:55:22 - INFO - === 智慧树全自动答题助手启动 ===
+2025-12-18 14:55:23 - INFO - 成功初始化edge浏览器
+2025-12-18 14:55:39 - INFO - 登录成功
+2025-12-18 14:56:41 - ERROR - 导航到课程失败：Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff77edc87c5
+	0x7ff77ed38e34
+	0x7ff77f123222
+	0x7ff77eb92d9e
+	0x7ff77eb92ffb
+	0x7ff77ebce917
+	0x7ff77eb8a2e5
+	0x7ff77ebcc8de
+	0x7ff77eb8982a
+	0x7ff77eb88b33
+	0x7ff77eb89653
+	0x7ff77ec722e4
+	0x7ff77ec8109c
+	0x7ff77ec7ac7f
+	0x7ff77ee59b27
+	0x7ff77ed44696
+	0x7ff77ed3eaa4
+	0x7ff77ed3ebe9
+	0x7ff77ed32cad
+	0x7ffe8132e8d7
+	0x7ffe82c6c53c
+
+2025-12-18 14:56:43 - INFO - 浏览器已关闭
+2025-12-18 14:56:43 - ERROR - 程序运行出错：Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff77edc87c5
+	0x7ff77ed38e34
+	0x7ff77f123222
+	0x7ff77eb92d9e
+	0x7ff77eb92ffb
+	0x7ff77ebce917
+	0x7ff77eb8a2e5
+	0x7ff77ebcc8de
+	0x7ff77eb8982a
+	0x7ff77eb88b33
+	0x7ff77eb89653
+	0x7ff77ec722e4
+	0x7ff77ec8109c
+	0x7ff77ec7ac7f
+	0x7ff77ee59b27
+	0x7ff77ed44696
+	0x7ff77ed3eaa4
+	0x7ff77ed3ebe9
+	0x7ff77ed32cad
+	0x7ffe8132e8d7
+	0x7ffe82c6c53c
+Traceback (most recent call last):
+  File "C:\Users\zwm\Desktop\auto_course\main.py", line 30, in main
+    main_logic.run()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\zwm\Desktop\auto_course\main_logic.py", line 93, in run
+    self.browser.navigate_to_course()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\zwm\Desktop\auto_course\browser_controller.py", line 88, in navigate_to_course
+    my_course_btn = self.wait.until(
+        EC.element_to_be_clickable((By.XPATH, "//a[contains(text(), '我的课程')]"))
+    )
+  File "C:\Users\zwm\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 122, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff77edc87c5
+	0x7ff77ed38e34
+	0x7ff77f123222
+	0x7ff77eb92d9e
+	0x7ff77eb92ffb
+	0x7ff77ebce917
+	0x7ff77eb8a2e5
+	0x7ff77ebcc8de
+	0x7ff77eb8982a
+	0x7ff77eb88b33
+	0x7ff77eb89653
+	0x7ff77ec722e4
+	0x7ff77ec8109c
+	0x7ff77ec7ac7f
+	0x7ff77ee59b27
+	0x7ff77ed44696
+	0x7ff77ed3eaa4
+	0x7ff77ed3ebe9
+	0x7ff77ed32cad
+	0x7ffe8132e8d7
+	0x7ffe82c6c53c
+
+2025-12-18 14:57:08 - INFO - === 智慧树全自动答题助手启动 ===
+2025-12-18 14:57:09 - INFO - 成功初始化edge浏览器
+2025-12-18 14:57:23 - INFO - 登录成功
+2025-12-18 15:08:40 - INFO - === 智慧树全自动答题助手启动 ===
+2025-12-18 15:08:41 - INFO - 成功初始化edge浏览器
+2025-12-18 15:08:55 - INFO - 登录成功
+2025-12-18 15:09:03 - INFO - 浏览器已关闭
+2025-12-18 15:09:03 - ERROR - 程序运行出错：name 'time' is not defined
+Traceback (most recent call last):
+  File "C:\Users\zwm\Desktop\auto_course\main.py", line 30, in main
+    main_logic.run()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\zwm\Desktop\auto_course\main_logic.py", line 97, in run
+    time.sleep(3)  # 等待页面加载，可根据网络情况调整
+    ^^^^
+NameError: name 'time' is not defined. Did you forget to import 'time'?
+2025-12-18 15:10:19 - INFO - === 智慧树全自动答题助手启动 ===
+2025-12-18 15:10:20 - INFO - 成功初始化edge浏览器
+2025-12-18 15:10:34 - INFO - 登录成功
+2025-12-18 15:11:25 - WARNING - 展开章节层级失败（可能已展开）：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=143.0.3650.80)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff77edc87c5
+	0x7ff77ed38e34
+	0x7ff77f123222
+	0x7ff77eb306a8
+	0x7ff77ebb7268
+	0x7ff77ebcc212
+	0x7ff77eb8982a
+	0x7ff77eb88b33
+	0x7ff77eb89653
+	0x7ff77ec722e4
+	0x7ff77ec8109c
+	0x7ff77ec7ac7f
+	0x7ff77ee59b27
+	0x7ff77ed44696
+	0x7ff77ed3eaa4
+	0x7ff77ed3ebe9
+	0x7ff77ed32cad
+	0x7ffe8132e8d7
+	0x7ffe82c6c53c
+
+2025-12-18 15:11:25 - INFO - 
+=== 开始处理第1/5个章节 ===
+2025-12-18 15:11:25 - INFO - 开始处理章节：未知章节_1766041885
+2025-12-18 15:11:25 - WARNING - 获取熟练度失败：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=143.0.3650.80)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff77edc87c5
+	0x7ff77ed38e34
+	0x7ff77f123222
+	0x7ff77eb306a8
+	0x7ff77ebb7268
+	0x7ff77ebcc212
+	0x7ff77eb8982a
+	0x7ff77eb88b33
+	0x7ff77eb89653
+	0x7ff77ec722e4
+	0x7ff77ec8109c
+	0x7ff77ec7ac7f
+	0x7ff77ee59b27
+	0x7ff77ed44696
+	0x7ff77ed3eaa4
+	0x7ff77ed3ebe9
+	0x7ff77ed32cad
+	0x7ffe8132e8d7
+	0x7ffe82c6c53c
+
+2025-12-18 15:11:25 - INFO - 当前熟练度：0%，目标：80%
+2025-12-18 15:11:25 - ERROR - 定位题目区域失败：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=143.0.3650.80)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff77edc87c5
+	0x7ff77ed38e34
+	0x7ff77f123222
+	0x7ff77eb306a8
+	0x7ff77ebb7268
+	0x7ff77ebcc212
+	0x7ff77eb8982a
+	0x7ff77eb88b33
+	0x7ff77eb89653
+	0x7ff77ec722e4
+	0x7ff77ec8109c
+	0x7ff77ec7ac7f
+	0x7ff77ee59b27
+	0x7ff77ed44696
+	0x7ff77ed3eaa4
+	0x7ff77ed3ebe9
+	0x7ff77ed32cad
+	0x7ffe8132e8d7
+	0x7ffe82c6c53c
+
+2025-12-18 15:11:25 - ERROR - 截图失败：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=143.0.3650.80)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff77edc87c5
+	0x7ff77ed38e34
+	0x7ff77f123222
+	0x7ff77eb306a8
+	0x7ff77ebb7268
+	0x7ff77ebcc212
+	0x7ff77eb8982a
+	0x7ff77eb88b33
+	0x7ff77eb89653
+	0x7ff77ec722e4
+	0x7ff77ec8109c
+	0x7ff77ec7ac7f
+	0x7ff77ee59b27
+	0x7ff77ed44696
+	0x7ff77ed3eaa4
+	0x7ff77ed3ebe9
+	0x7ff77ed32cad
+	0x7ffe8132e8d7
+	0x7ffe82c6c53c
+
+2025-12-18 15:11:25 - ERROR - 单题处理失败：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=143.0.3650.80)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff77edc87c5
+	0x7ff77ed38e34
+	0x7ff77f123222
+	0x7ff77eb306a8
+	0x7ff77ebb7268
+	0x7ff77ebcc212
+	0x7ff77eb8982a
+	0x7ff77eb88b33
+	0x7ff77eb89653
+	0x7ff77ec722e4
+	0x7ff77ec8109c
+	0x7ff77ec7ac7f
+	0x7ff77ee59b27
+	0x7ff77ed44696
+	0x7ff77ed3eaa4
+	0x7ff77ed3ebe9
+	0x7ff77ed32cad
+	0x7ffe8132e8d7
+	0x7ffe82c6c53c
+
+2025-12-18 15:11:25 - WARNING - 章节未知章节_1766041885第1次尝试未达标
+2025-12-18 15:11:25 - WARNING - 获取熟练度失败：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=143.0.3650.80)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff77edc87c5
+	0x7ff77ed38e34
+	0x7ff77f123222
+	0x7ff77eb306a8
+	0x7ff77ebb7268
+	0x7ff77ebcc212
+	0x7ff77eb8982a
+	0x7ff77eb88b33
+	0x7ff77eb89653
+	0x7ff77ec722e4
+	0x7ff77ec8109c
+	0x7ff77ec7ac7f
+	0x7ff77ee59b27
+	0x7ff77ed44696
+	0x7ff77ed3eaa4
+	0x7ff77ed3ebe9
+	0x7ff77ed32cad
+	0x7ffe8132e8d7
+	0x7ffe82c6c53c
+
+2025-12-18 15:11:25 - INFO - 当前熟练度：0%，目标：80%
+2025-12-18 15:11:25 - ERROR - 定位题目区域失败：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=143.0.3650.80)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff77edc87c5
+	0x7ff77ed38e34
+	0x7ff77f123222
+	0x7ff77eb306a8
+	0x7ff77ebb7268
+	0x7ff77ebcc212
+	0x7ff77eb8982a
+	0x7ff77eb88b33
+	0x7ff77eb89653
+	0x7ff77ec722e4
+	0x7ff77ec8109c
+	0x7ff77ec7ac7f
+	0x7ff77ee59b27
+	0x7ff77ed44696
+	0x7ff77ed3eaa4
+	0x7ff77ed3ebe9
+	0x7ff77ed32cad
+	0x7ffe8132e8d7
+	0x7ffe82c6c53c
+
+2025-12-18 15:11:25 - ERROR - 截图失败：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=143.0.3650.80)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff77edc87c5
+	0x7ff77ed38e34
+	0x7ff77f123222
+	0x7ff77eb306a8
+	0x7ff77ebb7268
+	0x7ff77ebcc212
+	0x7ff77eb8982a
+	0x7ff77eb88b33
+	0x7ff77eb89653
+	0x7ff77ec722e4
+	0x7ff77ec8109c
+	0x7ff77ec7ac7f
+	0x7ff77ee59b27
+	0x7ff77ed44696
+	0x7ff77ed3eaa4
+	0x7ff77ed3ebe9
+	0x7ff77ed32cad
+	0x7ffe8132e8d7
+	0x7ffe82c6c53c
+
+2025-12-18 15:11:25 - ERROR - 单题处理失败：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=143.0.3650.80)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff77edc87c5
+	0x7ff77ed38e34
+	0x7ff77f123222
+	0x7ff77eb306a8
+	0x7ff77ebb7268
+	0x7ff77ebcc212
+	0x7ff77eb8982a
+	0x7ff77eb88b33
+	0x7ff77eb89653
+	0x7ff77ec722e4
+	0x7ff77ec8109c
+	0x7ff77ec7ac7f
+	0x7ff77ee59b27
+	0x7ff77ed44696
+	0x7ff77ed3eaa4
+	0x7ff77ed3ebe9
+	0x7ff77ed32cad
+	0x7ffe8132e8d7
+	0x7ffe82c6c53c
+
+2025-12-18 15:11:25 - WARNING - 章节未知章节_1766041885第2次尝试未达标
+2025-12-18 15:11:25 - WARNING - 获取熟练度失败：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=143.0.3650.80)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff77edc87c5
+	0x7ff77ed38e34
+	0x7ff77f123222
+	0x7ff77eb306a8
+	0x7ff77ebb7268
+	0x7ff77ebcc212
+	0x7ff77eb8982a
+	0x7ff77eb88b33
+	0x7ff77eb89653
+	0x7ff77ec722e4
+	0x7ff77ec8109c
+	0x7ff77ec7ac7f
+	0x7ff77ee59b27
+	0x7ff77ed44696
+	0x7ff77ed3eaa4
+	0x7ff77ed3ebe9
+	0x7ff77ed32cad
+	0x7ffe8132e8d7
+	0x7ffe82c6c53c
+
+2025-12-18 15:11:25 - INFO - 当前熟练度：0%，目标：80%
+2025-12-18 15:11:25 - ERROR - 定位题目区域失败：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=143.0.3650.80)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff77edc87c5
+	0x7ff77ed38e34
+	0x7ff77f123222
+	0x7ff77eb306a8
+	0x7ff77ebb7268
+	0x7ff77ebcc212
+	0x7ff77eb8982a
+	0x7ff77eb88b33
+	0x7ff77eb89653
+	0x7ff77ec722e4
+	0x7ff77ec8109c
+	0x7ff77ec7ac7f
+	0x7ff77ee59b27
+	0x7ff77ed44696
+	0x7ff77ed3eaa4
+	0x7ff77ed3ebe9
+	0x7ff77ed32cad
+	0x7ffe8132e8d7
+	0x7ffe82c6c53c
+
+2025-12-18 15:11:25 - ERROR - 截图失败：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=143.0.3650.80)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff77edc87c5
+	0x7ff77ed38e34
+	0x7ff77f123222
+	0x7ff77eb306a8
+	0x7ff77ebb7268
+	0x7ff77ebcc212
+	0x7ff77eb8982a
+	0x7ff77eb88b33
+	0x7ff77eb89653
+	0x7ff77ec722e4
+	0x7ff77ec8109c
+	0x7ff77ec7ac7f
+	0x7ff77ee59b27
+	0x7ff77ed44696
+	0x7ff77ed3eaa4
+	0x7ff77ed3ebe9
+	0x7ff77ed32cad
+	0x7ffe8132e8d7
+	0x7ffe82c6c53c
+
+2025-12-18 15:11:25 - ERROR - 单题处理失败：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=143.0.3650.80)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff77edc87c5
+	0x7ff77ed38e34
+	0x7ff77f123222
+	0x7ff77eb306a8
+	0x7ff77ebb7268
+	0x7ff77ebcc212
+	0x7ff77eb8982a
+	0x7ff77eb88b33
+	0x7ff77eb89653
+	0x7ff77ec722e4
+	0x7ff77ec8109c
+	0x7ff77ec7ac7f
+	0x7ff77ee59b27
+	0x7ff77ed44696
+	0x7ff77ed3eaa4
+	0x7ff77ed3ebe9
+	0x7ff77ed32cad
+	0x7ffe8132e8d7
+	0x7ffe82c6c53c
+
+2025-12-18 15:11:25 - WARNING - 章节未知章节_1766041885第3次尝试未达标
+2025-12-18 15:11:25 - ERROR - 章节未知章节_1766041885经3次尝试仍未达标，已跳过
+2025-12-18 15:11:25 - ERROR - 进入下一节失败：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=143.0.3650.80)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff77edc87c5
+	0x7ff77ed38e34
+	0x7ff77f123222
+	0x7ff77eb306a8
+	0x7ff77ebb7268
+	0x7ff77ebcc212
+	0x7ff77eb8982a
+	0x7ff77eb88b33
+	0x7ff77eb89653
+	0x7ff77ec722e4
+	0x7ff77ec8109c
+	0x7ff77ec7ac7f
+	0x7ff77ee59b27
+	0x7ff77ed44696
+	0x7ff77ed3eaa4
+	0x7ff77ed3ebe9
+	0x7ff77ed32cad
+	0x7ffe8132e8d7
+	0x7ffe82c6c53c
+
+2025-12-18 15:11:27 - INFO - 浏览器已关闭
+2025-12-18 15:11:27 - ERROR - 程序运行出错：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=143.0.3650.80)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff77edc87c5
+	0x7ff77ed38e34
+	0x7ff77f123222
+	0x7ff77eb306a8
+	0x7ff77ebb7268
+	0x7ff77ebcc212
+	0x7ff77eb8982a
+	0x7ff77eb88b33
+	0x7ff77eb89653
+	0x7ff77ec722e4
+	0x7ff77ec8109c
+	0x7ff77ec7ac7f
+	0x7ff77ee59b27
+	0x7ff77ed44696
+	0x7ff77ed3eaa4
+	0x7ff77ed3ebe9
+	0x7ff77ed32cad
+	0x7ffe8132e8d7
+	0x7ffe82c6c53c
+Traceback (most recent call last):
+  File "C:\Users\zwm\Desktop\auto_course\main.py", line 30, in main
+    main_logic.run()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\zwm\Desktop\auto_course\main_logic.py", line 110, in run
+    self.browser.click_next_section()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\zwm\Desktop\auto_course\browser_controller.py", line 134, in click_next_section
+    next_section_btn = self.wait.until(
+        EC.element_to_be_clickable((By.CSS_SELECTOR, ".reviewDone.ZHIHUISHU_QZMD"))
+    )
+  File "C:\Users\zwm\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 113, in until
+    value = method(self._driver)
+  File "C:\Users\zwm\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 514, in _predicate
+    target = driver.find_element(*target)  # grab element at locator
+  File "C:\Users\zwm\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 802, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\zwm\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\zwm\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=143.0.3650.80)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff77edc87c5
+	0x7ff77ed38e34
+	0x7ff77f123222
+	0x7ff77eb306a8
+	0x7ff77ebb7268
+	0x7ff77ebcc212
+	0x7ff77eb8982a
+	0x7ff77eb88b33
+	0x7ff77eb89653
+	0x7ff77ec722e4
+	0x7ff77ec8109c
+	0x7ff77ec7ac7f
+	0x7ff77ee59b27
+	0x7ff77ed44696
+	0x7ff77ed3eaa4
+	0x7ff77ed3ebe9
+	0x7ff77ed32cad
+	0x7ffe8132e8d7
+	0x7ffe82c6c53c
+
+2025-12-18 15:12:48 - INFO - === 智慧树全自动答题助手启动 ===
+2025-12-18 15:12:49 - INFO - 成功初始化edge浏览器
+2025-12-18 15:13:06 - INFO - 登录成功

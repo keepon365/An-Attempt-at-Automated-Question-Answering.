@@ -1,0 +1,7 @@
+selenium>=4.10.0
+pyautogui>=0.9.54
+pillow>=9.5.0
+opencv-python>=4.8.0.76
+requests>=2.31.0
+pyinstaller>=5.13.0
+webdriver-manager>=4.0.0  # 自动管理浏览器驱动
